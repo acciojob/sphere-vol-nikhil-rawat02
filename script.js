@@ -8,8 +8,9 @@ function volume_sphere(event) {
     let vl = (4/3) * Math.PI * Math.pow(radius, 3);
     vl = vl.toFixed(4);
 	volume.value = vl;
-	console.log(vl);
 }
 
 
-document.getElementById('MyForm').onsubmit = function(event){volume_sphere(event)};
+document.getElementById('MyForm').onsubmit = function(event){
+	console.log(event);
+	volume_sphere(event)};
