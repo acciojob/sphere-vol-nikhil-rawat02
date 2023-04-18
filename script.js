@@ -12,5 +12,4 @@ function volume_sphere(event) {
 
 
 document.getElementById('MyForm').onsubmit = function(event){
-	console.log(event);
 	volume_sphere(event)};
